@@ -1,4 +1,4 @@
-package udemy.course.springframeworkpetclinic;
+package springframeworkpetclinic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

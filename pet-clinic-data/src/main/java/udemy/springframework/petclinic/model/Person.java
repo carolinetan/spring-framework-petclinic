@@ -1,4 +1,4 @@
-package udemy.course.springframeworkpetclinic.model;
+package udemy.springframework.petclinic.model;
 
 
 public class Person  {
