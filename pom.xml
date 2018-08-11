@@ -4,7 +4,7 @@
 
     <groupId>udemy.springfrmework</groupId>
     <artifactId>spring-framework-petclinic</artifactId>
-    <version>0.0.4-SNAPSHOT</version>
+    <version>0.0.4</version>
     <modules>
         <module>pet-clinic-data</module>
         <module>pet-clinic-web</module>
@@ -46,6 +46,6 @@
 
 <scm>
     <developerConnection>scm:git:git@github.com:carolinetan/spring-framework-petclinic.git</developerConnection>
-  <tag>HEAD</tag>
+  <tag>spring-framework-petclinic-0.0.4</tag>
   </scm>
 </project>
