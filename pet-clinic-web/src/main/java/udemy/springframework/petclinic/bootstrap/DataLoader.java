@@ -1,13 +1,12 @@
 package udemy.springframework.petclinic.bootstrap;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import udemy.springframework.petclinic.model.Owner;
 import udemy.springframework.petclinic.model.Vet;
 import udemy.springframework.petclinic.services.OwnerService;
 import udemy.springframework.petclinic.services.VetService;
-import udemy.springframework.petclinic.services.map.OwnerServiceMap;
-import udemy.springframework.petclinic.services.map.VetServiceMap;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -15,9 +14,10 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
